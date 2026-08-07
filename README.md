@@ -10,6 +10,15 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 >
 > The USB isn't galvanically isolated either, so it's recommended to fully disconnect the 2 FPC ribbon cables when programming the device. Controlling the device (droplet actuation) shall then be done over WIFI.
 
+
+> [!WARNING]
+>
+> **A few safety notes:**
+> 
+> Although I tried to design a fully enclosed device, the acrylic cover does not latch. Whenever high voltage is enabled, it is the user's responsibility to never open the acrylic cover.
+>
+> While the firmware demo already enforces this (could not be the case if a custom firmware is coded). It is important to only enable the high voltage when actively driving the device, and the VPP rail capacitors should be discharged in firmware after the HV module is disabled, to ensure VPP collapses instead of staying at 168V (the electrodes barely sink any current on their own). Collapsing VPP should obviously be done before switching the device off.
+
 > [!WARNING]
 > **No warranty, use at your own risk**: This project is provided as-is, without any guarantee of safety, correctness, or fitness for any purpose. If you do build, reproduce, adapt or take inspiration from this project, it's entirely at your own risk.
 >
@@ -19,9 +28,18 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 > [!NOTE]
 > **Educational / demo purpose only** This project is intended for educational / demo purpose only, with no intent of being  used in actual lab experiments.
 
-> [!IMPORTANT]
->
-> A few safety notes:
-> Although I tried to design a fully enclosed device, the acrylic cover does not latch. Whenever high voltage is enabled, it is the user's responsibility to never open the acrylic cover.
->
-> While the firmware demo already enforces this (could not be the case if a custom firmware is coded). It is important to only enable the high voltage when actively driving the device, and the VPP rail capacitors should be discharged in firmware after the HV module is disabled, to ensure VPP collapses instead of staying at 168V (the electrodes barely sink any current on their own). Collapsing VPP should obviously be done before switching the device off.
+
+
+# The project:
+
+# Key features:
+
+ - ESP32-C3 MCU
+ - HV509 16 CH push pull HV driver
+ - 3.3V-12V IN 168V OUT DC DC High voltage converter module
+ - VIN enabled `HV OUT` rail (AO3415A P channel Mosfet)
+ - 2x110k serie resistor directly on the HV boost output: should limit the current to a safe 750µA (in case of a downstream short circuit)
+ - same 2x110k acting as bleeding resistors, sinking `HV OUT` to GND until the MCU disables it.
+ - 2 FPC ribbon cable to be able to disconnect all HV related circuitry from the ESP32 devboard
+ - detachable EWOD cartridge, that connects thanks to 2x20 2.54mm Dupont Header pins.
+ - 3D printed enclosure with acrylic cover to see the water droplet.
