@@ -47,9 +47,9 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
  - VIN enabled `HV OUT` rail (AO3415A P channel Mosfet)
  - 2x110k serie resistor directly on the HV boost output: should limit the current to a safe 750µA (in case of a downstream short circuit)
  - same 2x110k acting as bleeding resistors, sinking `HV OUT` to GND until the MCU disables it.
- - 2 FPC ribbon cable to be able to disconnect all HV related circuitry from the ESP32 devboard
- - detachable EWOD cartridge, that connects thanks to 2x20 2.54mm Dupont Header pins.
- - 3D printed enclosure with acrylic cover to see the water droplet.
+ - 2 FPC ribbon cables to be able to disconnect all HV related circuitry from the ESP32 devboard
+ - detachable EWOD cartridge, that connects thanks to 2x20P 2.54mm Dupont Header pins.
+ - 3D printed enclosure with acrylic cover to see the water droplet through the window.
 
 # Schematic:
 
