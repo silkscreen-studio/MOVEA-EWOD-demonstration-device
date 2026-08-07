@@ -17,7 +17,7 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 >
 > **A few safety notes:**
 > 
-> Although I tried to design a fully enclosed device, the acrylic cover does not latch. Whenever high voltage is enabled, it is the user's responsibility to never open the acrylic cover.
+> Although I tried to design a fully enclosed device, the acrylic cover does not latch. Whenever high voltage is enabled, it is the user's responsibility to keep the acrylic door shut.
 >
 > While the firmware demo already enforces this (could not be the case if a custom firmware is coded). It is important to only enable the high voltage when actively driving the device, and the VPP rail capacitors should be discharged in firmware after the HV module is disabled, to ensure VPP collapses instead of staying at 168V (the electrodes barely sink any current on their own). Collapsing VPP should obviously be done before switching the device off.
 
