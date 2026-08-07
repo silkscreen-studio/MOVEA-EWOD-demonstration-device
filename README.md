@@ -1,6 +1,8 @@
 # MOVEA, an EWOD demonstration device
 
-A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C3, a DC DC boost converter module (168V OUT) as well as the HV509 driver IC. All inside a fully enclosed 3D printed device. 
+A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C3, a DC DC boost converter module (168V OUT) as well as the HV509 driver IC. All inside a fully enclosed 3D printed device.
+
+
 
 > [!CAUTION]
 > **HIGH VOLTAGE**
@@ -28,8 +30,13 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 > [!NOTE]
 > **Educational / demo purpose only** This project is intended for educational / demo purpose only, with no intent of being  used in actual lab experiments.
 
+<br><br>
+<img width="45%" alt="image" src="https://github.com/user-attachments/assets/36d8d75a-2011-4945-b53d-c5eaee0d2d56" />
+<br><br>
+<br><br>
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/36d8d75a-2011-4945-b53d-c5eaee0d2d56" />
+<img lt="3D layout" src="ASSETS/EWOD_LAYOUT_3D.png" />
+
 
 
 # Key features:
@@ -43,3 +50,14 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
  - 2 FPC ribbon cable to be able to disconnect all HV related circuitry from the ESP32 devboard
  - detachable EWOD cartridge, that connects thanks to 2x20 2.54mm Dupont Header pins.
  - 3D printed enclosure with acrylic cover to see the water droplet.
+
+# Schematic:
+
+<img width="1000" alt="bottom layout" src="ASSETS/EWOD_MOVEA_V1.0_Schematic_07_08_26.png" />
+
+# Layout:
+
+<p align="center">
+<img width="50.45%" alt="Top layout" src="ASSETS/EWOD_LAYOUT_TOP.png" />
+<img width="49%" alt="bottom layout" src="ASSETS/EWOD_LAYOUT_BOTTOM.png" />
+</p>
