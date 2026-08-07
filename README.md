@@ -29,8 +29,8 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 > **Educational / demo purpose only** This project is intended for educational / demo purpose only, with no intent of being  used in actual lab experiments.
 
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/36d8d75a-2011-4945-b53d-c5eaee0d2d56" />
 
-# The project:
 
 # Key features:
 
