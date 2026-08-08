@@ -10,7 +10,7 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 > This project generates high voltage (~168V DC) from the USB C to correctly drive the EWOD electrodes.
 > While I tried my best to provide a fully enclosed design with the HV part being detachable from the MCU circuitry, the high voltage side remains **not galvanically isolated** from the MCU side. Treat the whole board as live whenever `HV OUT` is enabled, not just HV traces.
 >
-> The USB isn't galvanically isolated either, so it's recommended to fully disconnect the 2 FPC ribbon cables when programming the device. Controlling the device (droplet actuation) shall then be done over WIFI.
+> The USB isn't galvanically isolated either, so it's recommended to fully disconnect the 2 FPC ribbon cables when programming the device to prevent any USB port damage in case of a failure. Controlling the device (droplet actuation) shall then be done over WIFI.
 
 
 > [!WARNING]
