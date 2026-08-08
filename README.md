@@ -90,5 +90,45 @@ After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the
 <img lt="3D Render IMG Hinge" src="ASSETS/Render Hinge.PNG" />
 <img lt="3D Render IMG close up array" src="ASSETS/Array 3D.png" />
 
+# BOM
+
+|Item                                  |Quantity|Designator                   |Value          |Manufacturer Part   |LCSC Part|Link                                                |Price [MOQ]   |Total Price (1 board & 5 cartridge)|
+|--------------------------------------|--------|-----------------------------|---------------|--------------------|---------|----------------------------------------------------|--------------|-----------------------------------|
+|MLCC 0805                             |4       |C1 C3 C8 C10                 |22uF           |CL10A226MP8NUNE     |C86295   |https://www.lcsc.com/product-detail/C86295.html     |$ 0.0537 [10] |$ 0.06                             |
+|MLCC 0402                             |6       |C2 C4 C5 C6 C7 C9            |100nF          |CL05B104KB54PNC     |C307331  |https://www.lcsc.com/product-detail/C307331.html    |$ 0.0096 [100]|$ 0.96                             |
+|USB ESD                               |1       |D1                           |               |USBLC6-2P6          |C15999   |https://www.lcsc.com/product-detail/C15999.html     |$ 0.2787 [5]  |$ 1.39                             |
+|DIODE                                 |2       |D2 D5                        |               |1N5819HW-7-F        |C82544   |https://www.lcsc.com/product-detail/C82544.html     |$ 0.0568 [10] |$ 0.57                             |
+|HV DIODE                              |1       |D3                           |               |MRA4007T3G          |C47921   |https://www.lcsc.com/product-detail/C47921.html     |$ 0.0942 [10] |$ 0.94                             |
+|ESD DIODE                             |1       |D4                           |3.3V           |LESD8D3.3CAT5G      |C5563754 |https://www.lcsc.com/product-detail/C5563754.html   |$ 0.0090 [20] |$ 0.18                             |
+|FPC Connector                         |4       |FPC1 FPC2 FPC3 FPC4          |               |FPC-05F-12PH20      |C2856799 |https://www.lcsc.com/product-detail/C2856799.html   |$ 0.1079 [5]  |$ 0.54                             |
+|Orange LED                            |3       |LED1 LED2 LED3               |               |XL-1608UOC-06       |C965800  |https://www.lcsc.com/product-detail/C965800.html    |$ 0.0068 [100]|$ 0.68                             |
+|P Mosfet                              |2       |Q1 Q2                        |               |AO3415A             |C133233  |https://www.lcsc.com/product-detail/C133233.html    |$ 0.1033 [5]  |$ 0.52                             |
+|N Mosfet                              |2       |Q3 Q5                        |               |AO3400A             |C20917   |https://www.lcsc.com/product-detail/C20917.html     |$ 0.0849 [5]  |$ 0.42                             |
+|HV N Mosfet                           |1       |Q4                           |               |IPN60R1K5CEATMA1    |C3288802 |https://www.lcsc.com/product-detail/C3288802.html   |$ 0.5529      |$ 0.56                             |
+|Chip Resistor 0402                    |2       |R1 R2                        |22             |AC0402JR-0722RL     |C144722  |https://www.lcsc.com/product-detail/C144722.html    |$ 0.0027 [100]|$ 0.27                             |
+|Chip Resistor 0402                    |6       |R3 R4 R12 R17 R18 R19        |680            |RC0402FR-07680RL    |C137948  |https://www.lcsc.com/product-detail/C137948.html    |$ 0.0054 [100]|$ 0.54                             |
+|Chip Resistor 0402                    |2       |R5 R6                        |5.1k           |RC-02K512JT         |C453708  |https://www.lcsc.com/product-detail/C453708.html    |$ 0.0027 [100]|$ 0.27                             |
+|Chip Resistor 0402                    |8       |R7 R8 R11 R15 R16 R20 R21 R22|10K            |RC0402JR-7W10KL     |C851859  |https://www.lcsc.com/product-detail/C851859.html    |$ 0.0045 [100]|$ 0.45                             |
+|Chip Resistor 0402                    |2       |R9 R10                       |4.7k           |RC0402FR-074K7L     |C105871  |https://www.lcsc.com/product-detail/C105871.html    |$ 0.0043 [100]|$ 0.43                             |
+|HV Chip Resistor 1206 200V 250mW rated|2       |R13 R14                      |110k           |RT1206BRD07110KL    |C870372  |https://www.lcsc.com/product-detail/C870372.html    |$ 0.073 [10]  |$ 0.73                             |
+|Push-button                           |2       |SW1 SW2                      |               |TS-1075S-A1B2-D4    |C492872  |https://www.lcsc.com/product-detail/C492872.html    |$ 0.067[10]   |$ 0.67                             |
+|3V3 LDO                               |1       |U1                           |               |TLV75733PDBVR       |C485517  |https://www.lcsc.com/product-detail/C485517.html    |$ 0.2067[5]   |$ 1.03                             |
+|ESD DIODE                             |1       |U2                           |5V             |LESD5D5.0CT1G       |C7433850 |https://www.lcsc.com/product-detail/C7433850.html   |$ 0.0148 [50] |$ 0.74                             |
+|HV Driver IC                          |1       |U3                           |               |HV509K6-G           |C633266  |https://www.lcsc.com/product-detail/C633266.html    |$ 4.3112      |$ 4.32                             |
+|MCU                                   |1       |U4                           |ESP32 WROOM    |ESP32-C3-WROOM-02-N4|C2934560 |https://www.lcsc.com/product-detail/C2934560.html   |$3.2954       |$3.30                              |
+|USB-C 16P                             |1       |USB1                         |               |TYPE-C 16PIN        |C2765186 |https://www.lcsc.com/product-detail/C2765186.html   |$ 0.0707 [20] |$ 1.41                             |
+|Female Header PIN                     |1       |U6                           |2x20           |PM254VS-12-40-H85   |C5249780 |https://www.lcsc.com/product-detail/C5249780.html   |$ 0.6594      |$ 0.66                             |
+|Male Header PIN (cartridge)           |1       |                             |2x20           |PZ254-2-20-S        |C3294478 |https://www.lcsc.com/product-detail/C3294478.html   |$ 0.4758      |$ 2.38                             |
+|                                      |        |                             |               |                    |         |                                                    |              |                                   |
+|BOOST converter                       | 1      | U5                          | 168V OUT      |                    |         |https://fr.aliexpress.com/item/1005009055927625.html|$ 10.25       | $ 10.25                           |
+|                                      |        |                             |               |                    |         |                                                    |              |                                   |
+|PCB Driver                            |1       |                             |               |                    |         |https://jlcpcb.com                                  |$ 8.37        |$ 8.37                             |
+|PCB EWOD array                        |1       |                             |               |                    |         |https://jlcpcb.com                                  |$ 8.37        |$ 8.37                             |
+|Metal Rod (hinge) Φ 6mm L >75mm       |        |                             |               |                    |         |https://fr.aliexpress.com/item/1005009347568195.html|$ 4.33        |$ 4.33                             |
+|3D Printed enclosure                  |        |                             |               |                    |         |                                                    |              |                                   |
+|2mm acrylic sheet                     |        |                             |(min 200x100mm)|                    |         |                                                    |              |                                   |
+|                                      |        |                             |               |                    |         |                                                    |              |                                   |
+|                                      |        |                             |               |                    |         |TOTAL                                               |              |$ 55.31                            |
+
 
 
