@@ -1,8 +1,6 @@
-https://www.lcsc.com/product-detail/.html
-
 Item,Quantity,Designator,Value,Manufacturer Part,LCSC Part,Link,Price [MOQ],Total Price (2 boards)
 MLCC 0805,4,C1 C3 C8 C10,22uF,CL10A226MP8NUNE,C86295,https://www.lcsc.com/product-detail/C86295.html,$ 0.0537 [10],$ 0.06
-MLCC 0402,6,C2 C4 C5 C6 C7 C9,100nF,CL05B104KB54PNC,C307331,,$ 0.0096 [100],$ 0.96
+MLCC 0402,6,C2 C4 C5 C6 C7 C9,100nF,CL05B104KB54PNC,C307331,https://www.lcsc.com/product-detail/.html,$ 0.0096 [100],$ 0.96
 USB ESD,1,D1,,USBLC6-2P6,C15999,,$ 0.2787 [5],$ 1.39
 DIODE,2,D2 D5,,1N5819HW-7-F,C82544,,$ 0.0568 [10],$ 0.57
 HV DIODE,1,D3,,MRA4007T3G,C47921,,$ 0.0942 [10],$ 0.94
