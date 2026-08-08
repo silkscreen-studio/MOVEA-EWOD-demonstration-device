@@ -61,3 +61,20 @@ A minimal 4x4 EWOD array, with the complete driver board based around an ESP32-C
 <img width="50.45%" alt="Top layout" src="ASSETS/EWOD_LAYOUT_TOP.png" />
 <img width="49%" alt="bottom layout" src="ASSETS/EWOD_LAYOUT_BOTTOM.png" />
 </p>
+
+
+# Firmware:
+
+A minimal demo code in C++ (Arduino IDE) is available to interface the HV509 as well as controlling the different power mosfets.
+
+# Enclosure Assembly:
+
+After 3D printing the different parts, cutting a 78.5mm long Φ 6mm steel rod and creating the acrylic window (2mm rectangle cut from an acrylic sheet, then bent with a hot air gun), the device can be assembled:
+After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the enclosure thanks to threaded inserts added beforehand, and the HV cover can be glued in place (held in place with the 2 side rails). for the window, it's recommended to create a 'chain' with all the hinges placed on the enclosure with the rod in the middle, before glueing the acrylic window to the 3 hinge parts.
+
+<br><br>
+
+
+# Render:
+
+
