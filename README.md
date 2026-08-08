@@ -75,6 +75,17 @@ After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the
 <br><br>
 
 
+<img lt="3D Enclosure IMG 1" src="ASSETS/Enclosure 1.png" />
+<img lt="3D Enclosure IMG 2" src="ASSETS/Enclosure 2.png" />
+<img lt="3D Enclosure IMG 3" src="ASSETS/Enclosure 3.png" />
+
+
+
 # Render:
+
+<img lt="3D Render IMG TOP view" src="ASSETS/Render TOP.png" />
+<img lt="3D Render IMG ISO 1" src="ASSETS/Render ISO.png" />
+<img lt="3D Render IMG ISO 2" src="ASSETS/Render ISO 2.png" />
+
 
 
