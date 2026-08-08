@@ -84,9 +84,11 @@ After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the
 # Render:
 
 <img lt="3D Render IMG TOP view" src="ASSETS/Render TOP.png" />
+<img lt="3D Render IMG ISO" src="ASSETS/Render ISO 3.png" />
 <img lt="3D Render IMG ISO 1" src="ASSETS/Render ISO.png" />
 <img lt="3D Render IMG ISO 2" src="ASSETS/Render ISO 2.png" />
 <img lt="3D Render IMG Hinge" src="ASSETS/Render Hinge.PNG" />
+<img lt="3D Render IMG close up array" src="ASSETS/Array 3D.png" />
 
 
 
