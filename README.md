@@ -10,7 +10,7 @@ EWOD (ElectroWetting On Dielectric) is a fascinating process that moves droplets
 > This project generates high voltage (~168V DC) from the USB C to correctly drive the EWOD electrodes.
 > While I tried my best to provide a fully enclosed design with the HV part being detachable from the MCU circuitry, the high voltage side remains **not galvanically isolated** from the MCU side. Treat the whole board as live whenever `HV OUT` is enabled, not just HV traces.
 >
-> The USB isn't galvanically isolated either, so it's recommended to fully disconnect the 2 FPC ribbon cables when programming the device to prevent any USB port damage in case of a failure. Controlling the device (droplet actuation) shall then be done over WIFI.
+> The USB isn't galvanically isolated either, so it's recommended to fully disconnect the 2 FPC ribbon cables when programming the device to prevent any USB port damage in case of a failure. Controlling the device (droplet actuation) could then be done over WIFI.
 
 
 > [!WARNING]
@@ -78,6 +78,15 @@ After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the
 <img lt="3D Enclosure IMG 1" src="ASSETS/Enclosure 1.png" />
 <img lt="3D Enclosure IMG 2" src="ASSETS/Enclosure 2.png" />
 <img lt="3D Enclosure IMG 3" src="ASSETS/Enclosure 3.png" />
+
+# Preparing the device
+
+the following sequence is for safely programming the device, and preparing the EWOD array.
+
+ - Before plugging any USB power source, make sure the 2 FPC cables are disconnected (only connected on one end, at the bottom side of the board)
+ - The ESP32 part only can then be programmed over USB (completely disconnected from any HV related circuitry, thus ensuring no failure can damage the USB port). To do so, plug the USB C cable, hold the BOOT button, press the RST button, release BOOT then flash the firmware. Disconnect the USB cable.
+ - Prepare the EWOD PCB: after adding a thin layer of low viscosity silicon oil (5cst), stretch a piece of ParafilmM to be applied over the electrode Array, then after adding an additionnal thin oil layer and plugging the array PCB on the device, a small droplet of water (barely larger than an electrode) can be pladed on the array, then discharged from any residual static charge with a GND wire
+ - Carefully reconnect both FPC cables, and close the acrylic cover before reconnecting a USB power source
 
 
 
