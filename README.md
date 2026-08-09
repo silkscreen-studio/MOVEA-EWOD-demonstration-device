@@ -1,6 +1,6 @@
 # MOVEA, an EWOD demonstration device
 
-EWOD (ElectroWetting On Dielectric) is a fascinating process that moves droplets of water over an electrode array (dielectric as a medium), thanks to a high voltage (100+ V) applied between 2 adjacent cells (capacitive effect). **MOVEA** is a minimal 4x4 EWOD array with the complete driver board to demonstrate the basic principle of electrowetting. Based around an ESP32-C3, a DC DC boost converter module (168V OUT) as well as the HV509 driver IC. All inside a fully enclosed 3D printed device. 
+EWOD (ElectroWetting On Dielectric) is a fascinating process that moves droplets of water over an electrode array (dielectric as a medium), thanks to a high voltage (100+ V) applied between 2 adjacent cells (coplanar capacitance). **MOVEA** is a minimal 4x4 EWOD array with the complete driver board to demonstrate the basic principle of electrowetting. Based around an ESP32-C3, a DC DC boost converter module (168V OUT) as well as the HV509 driver IC. All inside a fully enclosed 3D printed device. 
 
 
 
