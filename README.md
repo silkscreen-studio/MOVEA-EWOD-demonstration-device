@@ -37,6 +37,14 @@ EWOD (ElectroWetting On Dielectric) is a fascinating process that moves droplets
 
 <img lt="3D layout" src="ASSETS/EWOD_LAYOUT_3D.png" />
 
+# What is EWOD?
+
+Electrowetting is a fascinating branch of microfluidics, making possible to move droplets of water based solutions (µLiters of solutions) onto a flat surface without any mechanical part. EWOD has application in the biology industry (laboratories, ''lab on chip'') and in optical systems. By controlling each electrode with a 100+ V High voltage, the droplet position onto the EWOD grid can be controlled. 
+
+# What this project aims to provide
+
+This project is a minimal 4x4 EWOD device, with the FR4 EWOD array and the proper high voltage driver. The goal isn't to provide a finished lab-on-chip device with reservoirs and lab precision, but instead to obtain a small EWOD array that can move droplets on the 4x4 grid, showing the working principle of Electrowetting. Multiple dielectrics and different driving schemes could be used to evaluate different properties of electrowetting.
+
 
 
 # Key features:
