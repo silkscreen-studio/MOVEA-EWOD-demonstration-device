@@ -19,7 +19,7 @@ EWOD (ElectroWetting On Dielectric) is a fascinating process that moves droplets
 > 
 > Although I tried to design a fully enclosed device, the acrylic cover does not latch. Whenever high voltage is enabled, it is the user's responsibility to keep the acrylic door shut.
 >
-> I still added a 220k serie resistor right after the HV boost, which should limit the output current to completely safe levels of 700µA, but obviously the best practice is to not touch anything when the `HV` Rail is enabled.
+> I still added a 220k serie resistor right after the HV boost, which should limit the output current to completely safe levels of 750µA, but obviously the best practice is to not touch anything when the `HV` Rail is enabled.
 >
 > While the firmware demo already enforces this (could not be the case if a custom firmware is flashed). It is important to only enable the high voltage when actively actuating the droplets, and the `HV OUT` rail capacitors should be discharged in firmware after the HV module is disabled, to ensure `HV OUT` collapses instead of staying at 168V (the electrodes barely sink any current on their own). Collapsing `HV OUT` should obviously be done before switching the device off (because otherwise the N channel mosfet in charge of sinking `HV OUT` to ground won't conduct).
 
