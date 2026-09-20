@@ -53,6 +53,11 @@ Electrowetting is a fascinating branch of microfluidics, making possible to move
 
 This project is a minimal 4x4 EWOD device, with the FR4 EWOD array and the proper high voltage driver. The goal isn't to provide a finished lab-on-chip device with reservoirs and lab precision, but instead to obtain a small EWOD array that can move droplets on the 4x4 grid, showing the working principle of Electrowetting. Multiple dielectrics and different driving schemes could be used to evaluate different properties of electrowetting.
 
+# Demos:
+
+https://www.youtube.com/shorts/SwbNJbgiKzs
+
+https://www.youtube.com/watch?v=05vwhufC6Lg
 
 
 # Key features:
