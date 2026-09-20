@@ -3,6 +3,12 @@
 EWOD (ElectroWetting On Dielectric) is a fascinating process that moves droplets of water over an electrode array (dielectric as a medium), thanks to a high voltage (100+ V) applied between 2 adjacent cells (coplanar capacitance). **MOVEA** is a minimal 4x4 EWOD array with the complete driver board to demonstrate the basic principle of electrowetting. Based around an ESP32-C3, a DC DC boost converter module (168V OUT) as well as the HV509 driver IC. All inside a fully enclosed 3D printed device. 
 
 
+<p align="center">
+<img width="50%" alt="MOVEA BUILT" src="ASSETS/BUILD_IMG/MOVEA built.jpg" />
+<img width="37.2%" alt="MOVEA in action" src="ASSETS/BUILD_IMG/MOVEA in action 1.png" />
+</p>
+
+
 
 > [!CAUTION]
 > **HIGH VOLTAGE**
@@ -80,14 +86,39 @@ A minimal demo code in C++ (Arduino IDE) is available to interface the HV509 as 
 # Enclosure Assembly:
 
 After 3D printing the different parts, cutting a 78.5mm long Φ 6mm steel rod and creating the acrylic window (2mm rectangle cut from an acrylic sheet, then bent with a hot air gun), the device can be assembled:
-After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the enclosure thanks to threaded inserts added beforehand, and the HV cover can be glued in place (held in place with the 2 side rails). for the window, it's recommended to create a 'chain' with all the hinges placed on the enclosure with the rod in the middle, before glueing the acrylic window to the 3 hinge parts.
+After connecting the 2 FPC ribbon cables, the PCB can be securely mounted to the enclosure thanks to threaded inserts added beforehand, and the HV cover can be glued in place (held in place with the 2 side rails). for the window, it's recommended to create a 'chain' with all the hinges placed on the enclosure with the rod in the middle, before gluing the acrylic window to the 3 hinge parts.
+
+> [!NOTE]
+> **POST BUILD EDIT**
+> Bending the acrylic with the hot air gun wasn't really easy, the round 90° angle turned out pretty good, but the 10° angle near the hinge ended up offset...
 
 <br><br>
 
 
-<img lt="3D Enclosure IMG 1" src="ASSETS/Enclosure 1.png" />
-<img lt="3D Enclosure IMG 2" src="ASSETS/Enclosure 2.png" />
-<img lt="3D Enclosure IMG 3" src="ASSETS/Enclosure 3.png" />
+<p align="center">
+<img width="49.3%" alt="3D Enclosure IMG 1" src="ASSETS/Enclosure 1.png" />
+<img width="50.1%" alt="3D Enclosure IMG 2" src="ASSETS/Enclosure 2.png" />
+<img  alt="3D Enclosure IMG 3" src="ASSETS/Enclosure 3.png" />
+</p>
+<p align="center">
+<img width="49%"alt="BUILD Enclosure IMG 3" src="ASSETS/BUILD_IMG/Enclosure 3.jpg" />
+<img  width="49%"alt="BUILD Enclosure IMG 2" src="ASSETS/BUILD_IMG/Enclosure 2.jpg" />
+</p>
+<p align="center">
+<img width="49%" alt="BUILD Enclosure IMG 4" src="ASSETS/BUILD_IMG/Enclosure 4.jpg" />
+<img width="49%" alt="BUILD Enclosure IMG 5" src="ASSETS/BUILD_IMG/Enclosure 5.jpg" />
+</p>
+
+<p align="center">
+<img width="49%" alt="PCB soldered" src="ASSETS/BUILD_IMG/PCB soldered.jpg" />
+<img width="49%" alt="PCB in case" src="ASSETS/BUILD_IMG/MOVEA in case.jpg" />
+</p>
+
+<img alt="MOVEA built" src="ASSETS/BUILD_IMG/MOVEA built.jpg" />
+
+
+
+
 
 # Preparing the device
 
@@ -97,6 +128,10 @@ the following sequence is for safely programming the device, and preparing the E
  - The ESP32 part only can then be programmed over USB (completely disconnected from any HV related circuitry, thus ensuring no failure can damage the USB port). To do so, plug the USB C cable, hold the BOOT button, press the RST button, release BOOT then flash the firmware. Disconnect the USB cable.
  - Prepare the EWOD PCB: after adding a thin layer of low viscosity silicon oil (5cst), stretch a piece of ParafilmM to be applied over the electrode Array, then after adding an additionnal thin oil layer and plugging the array PCB on the device, a small droplet of water (barely larger than an electrode) can be pladed on the array, then discharged from any residual static charge with a GND wire
  - Carefully reconnect both FPC cables, and close the acrylic cover before reconnecting a USB power source
+
+> [!NOTE]
+> **POST BUILD EDIT**
+>   I couldn't stretch the parafilm correctly, so it obviously didn't work. However when testing other films I had at home, desk scotch worked quite well... This 31µm thin scotch was giving decent results (the actuation was a bit slow) but  with a proper 10 or 5µm dielectric film it should work even better. I'm planning on trying BOPP film and kapton tape. Both should work better.
 
 
 
